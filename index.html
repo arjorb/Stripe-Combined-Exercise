@@ -10,15 +10,15 @@
   <body>
     <!-- Gratient of showcase  -->
     <div
-      class="h-full -skew-y-12 -translate-y-80 bg-gradient-to-r from-red-500 via-yellow-500 to-pink-500 transform opacity-80 animate-gradient-xy"
+      class="h-[90vh] md:h-full -skew-y-12 -translate-y-80 bg-gradient-to-r from-red-500 via-yellow-500 to-pink-500 transform opacity-80 animate-gradient-xy"
     ></div>
     <!-- starting of navbar-->
     <div class="absolute w-full top-0">
       <div
-        class="max-w-5.5xl mx-auto mt-2 flex items-center justify-between px-4 py-2 text-white"
+        class="max-w-[1080px] mx-auto mt-2 flex items-center justify-between px-4 py-2 text-white"
       >
         <a href="#" class="text-2xl font-bold">Stripe</a>
-        <ul class="flex gap-8 text-sm font-semibold">
+        <ul class="hidden md:flex gap-8 text-sm font-semibold">
           <li class="cursor-pointer">Products</li>
           <li class="cursor-pointer">Solutions</li>
           <li class="cursor-pointer">Developers</li>
@@ -37,9 +37,9 @@
     <!-- starting of showcase-->
     <div class="absolute w-full top-16">
       <div class="px-4 py-2 flex gap-5 justify-between overflow-hidden">
-        <div class="ml-24 pt-[8.2rem]">
+        <div class="pt-[5rem] md:ml-24 md:pt-[8.2rem]">
           <h1
-            class="text-[5.3rem] opacity-70 font-bold tracking-tight leading-tight"
+            class="text-[3rem] md:text-[5.3rem] opacity-70 font-bold tracking-tight leading-tight"
           >
             Financial <br />
             infrastructure <br />
@@ -62,7 +62,7 @@
           </div>
         </div>
 
-        <div class="relative -mr-[35rem]">
+        <div class="hidden md:block relative -mr-[35rem]">
           <img class="" src="assets/dashboard.png" alt="" />
           <img class="absolute top-16 -left-24" src="assets/phone.png" alt="" />
         </div>
@@ -70,8 +70,8 @@
     </div>
 
     <!-- starting of partner-->
-    <div class="max-w-5.5xl mx-auto">
-      <div class="mt-32 px-10 grid grid-cols-4 gap-20">
+    <div class="md:max-w-[1080px] mx-auto">
+      <div class="mt-16 md:mt-32 px-10 grid grid-cols-2 md:grid-cols-4 gap-20">
         <img src="assets/logo1.svg" alt="" />
         <img src="assets/logo2.svg" alt="" />
         <img src="assets/logo3.svg" alt="" />
@@ -85,7 +85,9 @@
 
     <!-- starting of Unified platform-->
     <div class="bg-[#F6F9FC] mt-28">
-      <div class="max-w-5.5xl mx-auto pt-32 grid grid-cols-2 gap-10">
+      <div
+        class="max-w-5.5xl mx-auto pt-32 grid grid-cols-1 md:grid-cols-2 gap-10"
+      >
         <p class="text-lg font-bold text-indigo-500">Unified platform</p>
         <h1
           class="text-4xl text-slate-800 font-bold leading-snug tracking-wide col-start-1"
@@ -144,8 +146,10 @@
     </div>
 
     <!-- starting of the Designed for developers  -->
-    <div class="h-[130vh] -skew-y-6 -translate-y-36 bg-[#0A2540]">
-      <div class="max-w-5xl mx-auto py-56 skew-y-6 grid grid-cols-4 gap-10">
+    <div class="h-[140vh] md:h-[130vh] -skew-y-6 -translate-y-36 bg-[#0A2540]">
+      <div
+        class="max-w-[1080px] px-4 mx-auto py-24 md:py-56 skew-y-6 grid md:grid-cols-4 gap-10"
+      >
         <div class="col-span-2">
           <p class="text-lg font-bold text-blue-400 mb-3">
             Designed for developers
@@ -163,7 +167,7 @@
           </button>
         </div>
         <!-- simple div 1  -->
-        <div class="col-start-1 -mt-28">
+        <div class="md:col-start-1 md:-mt-28">
           <img class="w-10" src="assets/terminal_icon.png" alt="" />
           <p class="font-bold text-white border-l-2 border-blue-400 pl-2 my-3">
             Tools for every stack
@@ -176,7 +180,7 @@
         </div>
 
         <!-- simple div 2  -->
-        <div class="-mt-28">
+        <div class="md:-mt-28">
           <img class="w-10" src="assets/boxes.png" alt="" />
           <p class="font-bold text-white border-l-2 border-blue-400 pl-2 my-3">
             Prebuilt integrations
@@ -189,7 +193,7 @@
         </div>
         <!-- Terminal Dashboard  -->
         <img
-          class="row-start-1 row-span-2 col-start-3 col-span-2"
+          class="md:row-start-1 md:row-span-2 md:col-start-3 md:col-span-2"
           src="assets/terminal_dashboard.png"
           alt=""
         />
@@ -205,7 +209,7 @@
         and finance
       </h1>
 
-      <div class="grid grid-cols-4 gap-10 my-20">
+      <div class="grid md:grid-cols-4 gap-10 my-20">
         <!-- item 1 -->
         <div>
           <img class="w-10" src="assets/close.png" alt="" />
@@ -260,8 +264,8 @@
     <!-- starting of backbone  -->
 
     <section class="relative">
-      <div class="h-[130vh] -skew-y-6 bg-[#0A2540]">
-        <div class="max-w-5xl mx-auto py-56 skew-y-6">
+      <div class="h-[250vh] md:h-[130vh] -skew-y-6 bg-[#0A2540]">
+        <div class="max-w-[1080px] px-4 mx-auto py-24 md:py-56 skew-y-6">
           <div class="w-2/5 space-y-7">
             <p class="text-lg font-bold text-blue-400 mb-3">Global scale</p>
             <h1 class="text-4xl font-bold text-white mb-3">
@@ -276,7 +280,7 @@
             </p>
           </div>
 
-          <div class="relative grid grid-cols-4 gap-10 my-20 z-40">
+          <div class="relative grid md:grid-cols-4 gap-10 my-20 z-40">
             <!-- item 1 -->
             <div>
               <p
@@ -332,9 +336,11 @@
 
     <!-- starting of get ready   -->
 
-    <div class="relative max-w-5xl mx-auto grid grid-cols-4 gap-10 z-20 pb-56">
+    <div
+      class="relative max-w-[1080px] mx-auto px-4 md:py-24 grid md:grid-cols-4 gap-10 z-20 pb-40"
+    >
       <!-- item 1 -->
-      <div class="col-span-2">
+      <div class="md:col-span-2">
         <h1 class="text-2xl font-bold mb-6">Ready to get started?</h1>
         <p class="text-base text-gray-500 mb-5 w-[380px]">
           Explore Stripe Payments, or create an account instantly and start
@@ -371,103 +377,113 @@
 
     <!-- starting of footer   -->
 
-    <div class="h-[120vh] -skew-y-6 bg-[#F6F9FC]">
-      <div class="max-w-5xl mx-auto pt-40 skew-y-6 grid grid-cols-4 gap-9">
-        <!-- footer 1 -->
-        <div class="flex flex-col justify-between">
-          <div>
-            <p class="text-2xl font-bold mb-3">Stripe</p>
-            <ul class="text-[0.9rem] space-y-1 text-gray-600">
-              <li>United States</li>
-              <li>English (United State)</li>
-            </ul>
+    <div class="h-[250vh] md:h-[120vh] -skew-y-6 bg-[#F6F9FC]">
+      <div class="max-w-[1080px] mx-auto px-4 pt-40 skew-y-6">
+        <div class="md:flex gap-40">
+          <!-- footer 1 -->
+          <div class="flex flex-col justify-between mb-10 md:mb-0">
+            <div>
+              <p class="text-2xl font-bold mb-3">Stripe</p>
+              <ul class="text-[0.9rem] space-y-1 text-gray-600">
+                <li>United States</li>
+                <li>English (United State)</li>
+              </ul>
+            </div>
+            <div class="text-sm text-gray-600">© 2022 Stripe, Inc.</div>
           </div>
-          <div class="text-sm text-gray-600">© 2022 Stripe, Inc.</div>
-        </div>
-        <!-- footer 2 -->
-        <div>
-          <p class="text-[0.9rem] text-gray-500 font-bold mb-3">Product</p>
-          <ul class="text-[0.9rem] text-gray-600 space-y-2">
-            <li>Atlas</li>
-            <li>Billing</li>
-            <li>Capital</li>
-            <li>Checkout</li>
-            <li>Climate</li>
-            <li>Connect</li>
-            <li>Corporate Card</li>
-            <li>Data Pipeline</li>
-            <li>Financial Connections</li>
-            <li>Invoicing</li>
-            <li>Issuing</li>
-            <li>Link</li>
-            <li>Payments</li>
-            <li>Payment Links</li>
-            <li>Payouts</li>
-            <li>Pricing</li>
-            <li>Radar</li>
-            <li>Revenue Recognition</li>
-            <li>Sigma</li>
-            <li>Tax</li>
-            <li>Terminal</li>
-            <li>Treasury</li>
-          </ul>
-        </div>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-20">
+            <!-- footer 2 -->
+            <div>
+              <p class="text-[0.9rem] text-gray-500 font-bold mb-3">Product</p>
+              <ul class="text-[0.9rem] text-gray-600 space-y-2">
+                <li>Atlas</li>
+                <li>Billing</li>
+                <li>Capital</li>
+                <li>Checkout</li>
+                <li>Climate</li>
+                <li>Connect</li>
+                <li>Corporate Card</li>
+                <li>Data Pipeline</li>
+                <li>Financial Connections</li>
+                <li>Invoicing</li>
+                <li>Issuing</li>
+                <li>Link</li>
+                <li>Payments</li>
+                <li>Payment Links</li>
+                <li>Payouts</li>
+                <li>Pricing</li>
+                <li>Radar</li>
+                <li>Revenue Recognition</li>
+                <li>Sigma</li>
+                <li>Tax</li>
+                <li>Terminal</li>
+                <li>Treasury</li>
+              </ul>
+            </div>
 
-        <!-- footer 3 -->
-        <div>
-          <p class="text-[0.9rem] text-gray-500 font-bold mb-3">Use Cases</p>
-          <ul class="text-[0.9rem] text-gray-600 space-y-2">
-            <li>Ecommerce</li>
-            <li>SaaS</li>
-            <li>Marketplaces</li>
-            <li>Embedded Finance</li>
-            <li>Platforms</li>
-            <li>Creator Economy</li>
-            <li>Crypto</li>
-            <li>Global Businesses</li>
-          </ul>
+            <!-- footer 3 -->
+            <div>
+              <p class="text-[0.9rem] text-gray-500 font-bold mb-3">
+                Use Cases
+              </p>
+              <ul class="text-[0.9rem] text-gray-600 space-y-2">
+                <li>Ecommerce</li>
+                <li>SaaS</li>
+                <li>Marketplaces</li>
+                <li>Embedded Finance</li>
+                <li>Platforms</li>
+                <li>Creator Economy</li>
+                <li>Crypto</li>
+                <li>Global Businesses</li>
+              </ul>
 
-          <p class="text-[0.9rem] text-gray-500 font-bold my-3">
-            Integrations & Custom Solutions
-          </p>
-          <ul class="text-[0.9rem] text-gray-600 space-y-2">
-            <li>App Marketplace</li>
-            <li>Partner Ecosystem</li>
-            <li>Professional Services</li>
-          </ul>
+              <p class="text-[0.9rem] text-gray-500 font-bold my-3">
+                Integrations & Custom Solutions
+              </p>
+              <ul class="text-[0.9rem] text-gray-600 space-y-2">
+                <li>App Marketplace</li>
+                <li>Partner Ecosystem</li>
+                <li>Professional Services</li>
+              </ul>
 
-          <p class="text-[0.9rem] text-gray-500 font-bold my-3">Developers</p>
-          <ul class="text-[0.9rem] text-gray-600 space-y-2">
-            <li>Documentation</li>
-            <li>API Reference</li>
-            <li>API Status</li>
-            <li>API Changelog</li>
-            <li>Build a Strip App</li>
-          </ul>
-        </div>
+              <p class="text-[0.9rem] text-gray-500 font-bold my-3">
+                Developers
+              </p>
+              <ul class="text-[0.9rem] text-gray-600 space-y-2">
+                <li>Documentation</li>
+                <li>API Reference</li>
+                <li>API Status</li>
+                <li>API Changelog</li>
+                <li>Build a Strip App</li>
+              </ul>
+            </div>
 
-        <!-- footer 4 -->
-        <div>
-          <p class="text-[0.9rem] text-gray-500 font-bold mb-3">Resources</p>
-          <ul class="text-[0.9rem] text-gray-600 space-y-2">
-            <li>Support Center</li>
-            <li>Guides</li>
-            <li>Blog</li>
-            <li>Annual Conference</li>
-            <li>Privacy & Terms</li>
-            <li>Licenses</li>
-            <li>COVID-19</li>
-            <li>Sitemap</li>
-            <li>Cookie settings</li>
-          </ul>
+            <!-- footer 4 -->
+            <div>
+              <p class="text-[0.9rem] text-gray-500 font-bold mb-3">
+                Resources
+              </p>
+              <ul class="text-[0.9rem] text-gray-600 space-y-2">
+                <li>Support Center</li>
+                <li>Guides</li>
+                <li>Blog</li>
+                <li>Annual Conference</li>
+                <li>Privacy & Terms</li>
+                <li>Licenses</li>
+                <li>COVID-19</li>
+                <li>Sitemap</li>
+                <li>Cookie settings</li>
+              </ul>
 
-          <p class="text-[0.9rem] text-gray-500 font-bold my-3">Company</p>
-          <ul class="text-[0.9rem] text-gray-600 space-y-2">
-            <li>Jobs</li>
-            <li>Newsroom</li>
-            <li>Stripe Press</li>
-            <li>Become a Partner</li>
-          </ul>
+              <p class="text-[0.9rem] text-gray-500 font-bold my-3">Company</p>
+              <ul class="text-[0.9rem] text-gray-600 space-y-2">
+                <li class="">Jobs</li>
+                <li>Newsroom</li>
+                <li>Stripe Press</li>
+                <li>Become a Partner</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
