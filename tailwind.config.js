@@ -18,11 +18,31 @@ module.exports = {
           },
         },
       },
+      colors: {
+        primary: '#0A2540',
+        second: '#F6F9FC',
+      },
+      margin: {
+        35: '35rem',
+      },
+      fontSize: {
+        sm: '0.9rem',
+        '7.7xl': '5.3rem',
+      },
       maxWidth: {
-        '5.5xl': '85vw',
+        container: '1080px',
+      },
+      width: {
+        small: '23.75rem',
       },
       height: {
+        sm: '20vh',
+        small: '30vh',
+        medium: '90vh',
         full: '98.5vh',
+        fuller: '130vh',
+        fullest: '140vh',
+        fullester: '250vh',
       },
     },
   },
