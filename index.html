@@ -17,17 +17,17 @@
       <div
         class="max-w-container mx-auto mt-2 flex items-center justify-between px-4 py-2 text-white"
       >
-        <a href="#" class="text-2xl font-bold">Stripe</a>
+        <a href="#" class="text-2xl font-bold hover:text-gray-100">Stripe</a>
         <ul class="hidden md:flex gap-8 text-sm font-semibold">
-          <li class="cursor-pointer">Products</li>
-          <li class="cursor-pointer">Solutions</li>
-          <li class="cursor-pointer">Developers</li>
-          <li class="cursor-pointer">Resources</li>
-          <li class="cursor-pointer">Pricing</li>
+          <li class="cursor-pointer hover:text-gray-100">Products</li>
+          <li class="cursor-pointer hover:text-gray-100">Solutions</li>
+          <li class="cursor-pointer hover:text-gray-100">Developers</li>
+          <li class="cursor-pointer hover:text-gray-100">Resources</li>
+          <li class="cursor-pointer hover:text-gray-100">Pricing</li>
         </ul>
 
         <button
-          class="text-sm bg-white bg-opacity-20 px-6 py-1 rounded-full cursor-pointer"
+          class="text-sm bg-white bg-opacity-20 px-6 py-1 rounded-full cursor-pointer hover:bg-opacity-50"
         >
           Sign in
         </button>
@@ -35,45 +35,42 @@
     </div>
 
     <!-- starting of showcase-->
-    <section class="max-w-container mx-auto">
-      <div class="absolute w-full top-16">
-        <div class="px-4 py-2 flex gap-5 justify-between overflow-hidden">
-          <div class="pt-20 md:pt-32">
-            <h1
-              class="text-5xl md:text-7.7xl opacity-70 font-bold tracking-tight leading-tight"
+    <div class="absolute w-full top-16">
+      <div class="px-4 py-2 flex gap-5 justify-between overflow-hidden">
+        <div class="pt-20 md:ml-24 md:pt-32">
+          <h1
+            class="text-5xl md:text-7.7xl opacity-70 font-bold tracking-tight leading-tight"
+          >
+            Financial <br />
+            infrastructure <br />
+            for the internet
+          </h1>
+          <p class="text-gray-500 text-lg mt-5">
+            Millions of companies of all sizes—from startups to Fortune <br />
+            500s—use Stripe’s software and APIs to accept payments, <br />
+            send payouts, and manage their businesses online.
+          </p>
+          <div class="mt-6 space-x-4">
+            <button
+              class="bg-slate-800 text-white text-sm px-6 py-2 rounded-full hover:bg-slate-700"
             >
-              Financial <br />
-              infrastructure <br />
-              for the internet
-            </h1>
-            <p class="text-gray-500 text-lg mt-5">
-              Millions of companies of all sizes—from startups to Fortune <br />
-              500s—use Stripe’s software and APIs to accept payments, <br />
-              send payouts, and manage their businesses online.
-            </p>
-            <div class="mt-6 space-x-4">
-              <button
-                class="bg-slate-800 text-white text-sm px-6 py-2 rounded-full"
-              >
-                Start now
-              </button>
-              <button class="text-slate-800 text-sm font-bold">
-                Contact sales
-              </button>
-            </div>
-          </div>
-
-          <div class="hidden md:block relative -mr-35">
-            <img class="" src="assets/dashboard.png" alt="" />
-            <img
-              class="absolute top-16 -left-24"
-              src="assets/phone.png"
-              alt=""
-            />
+              Start now
+            </button>
+            <button
+              class="text-slate-800 text-sm font-bold hover:text-slate-600"
+            >
+              Contact sales
+            </button>
           </div>
         </div>
+
+        <div class="hidden md:block relative -mr-35">
+          <img class="" src="assets/dashboard.png" alt="" />
+          <img class="absolute top-16 -left-24" src="assets/phone.png" alt="" />
+        </div>
       </div>
-    </section>
+    </div>
+
     <!-- starting of partner-->
     <div class="md:max-w-container mx-auto">
       <div class="mt-16 md:mt-32 px-10 grid grid-cols-2 md:grid-cols-4 gap-20">
@@ -121,7 +118,7 @@
           business spend, and much more.
         </p>
         <button
-          class="w-max bg-indigo-500 text-sm text-white px-7 py-2 rounded-full"
+          class="w-max bg-indigo-500 text-sm text-white px-7 py-2 rounded-full hover:bg-slate-800"
         >
           Start with payment
         </button>
@@ -151,9 +148,10 @@
     </div>
 
     <!-- starting of the Designed for developers  -->
-    <div class="h-fullest md:h-fuller -skew-y-6 -translate-y-36 bg-primary">
+
+    <div class="h-auto md:h-auto -skew-y-6 -translate-y-36 bg-primary">
       <div
-        class="max-w-container px-4 mx-auto py-24 md:py-56 skew-y-6 grid md:grid-cols-4 gap-10"
+        class="max-w-container px-4 mx-auto py-24 md:py-36 skew-y-6 grid md:grid-cols-4 gap-10"
       >
         <div class="col-span-2">
           <p class="text-lg font-bold text-blue-400 mb-3">
@@ -167,7 +165,9 @@
             stitch together disparate systems or spend months integrating
             payments functionality.
           </p>
-          <button class="bg-blue-400 rounded-full text-white text-sm px-6 py-2">
+          <button
+            class="bg-blue-400 rounded-full text-white text-sm px-6 py-2 hover:bg-white hover:text-slate-800"
+          >
             Read the docs
           </button>
         </div>
@@ -181,11 +181,13 @@
             We offer client and server libraries in everything from React and
             PHP to .NET and iOS
           </p>
-          <button class="text-blue-300 text-sm font-bold">See libraries</button>
+          <button class="text-blue-300 text-sm font-bold hover:text-white">
+            See libraries
+          </button>
         </div>
 
         <!-- simple div 2  -->
-        <div class="md:-mt-28">
+        <div class="col-start-1 md:col-start-2 md:-mt-28">
           <img class="w-10" src="assets/boxes.png" alt="" />
           <p class="font-bold text-white border-l-2 border-blue-400 pl-2 my-3">
             Prebuilt integrations
@@ -194,11 +196,13 @@
             Use integrations for systems like Shopify, WooCommerce, NetSuite,
             and more.
           </p>
-          <button class="text-blue-300 text-sm font-bold">See libraries</button>
+          <button class="text-blue-300 text-sm font-bold hover:text-white">
+            See libraries
+          </button>
         </div>
         <!-- Terminal Dashboard  -->
         <img
-          class="md:row-start-1 md:row-span-2 md:col-start-3 md:col-span-2"
+          class="col-start-1 col-span-2 w-full px-4 md:row-start-1 md:row-span-2 md:col-start-3 md:col-span-2"
           src="assets/terminal_dashboard.png"
           alt=""
         />
@@ -269,9 +273,9 @@
     <!-- starting of backbone  -->
 
     <section class="relative">
-      <div class="h-fullester md:h-fuller -skew-y-6 bg-primary">
-        <div class="max-w-container px-4 mx-auto py-24 md:py-56 skew-y-6">
-          <div class="w-2/5 space-y-7">
+      <div class="h-auto md:h-auto -skew-y-6 bg-primary bg-background bg-cover">
+        <div class="max-w-container px-4 mx-auto py-24 md:py-32 skew-y-6">
+          <div class="md:w-2/5 space-y-7">
             <p class="text-lg font-bold text-blue-400 mb-3">Global scale</p>
             <h1 class="text-4xl font-bold text-white mb-3">
               The backbone for internet business
@@ -333,8 +337,6 @@
           </div>
         </div>
       </div>
-      <!-- global image  -->
-      <img class="absolute bottom-0" src="assets/world.png" alt="" />
       <!-- remove the skew on one side -->
       <div class="absolute w-full h-small bg-white -mt-32"></div>
     </section>
@@ -352,10 +354,14 @@
           accepting payments. You can also contact us to design a custom package
           for your business
         </p>
-        <button class="bg-indigo-500 rounded-full text-white text-sm px-8 py-2">
+        <button
+          class="bg-indigo-500 rounded-full text-sm px-8 py-2 hover:bg-slate-800 text-white"
+        >
           Start now
         </button>
-        <button class="text-indigo-500 text-sm ml-3">Contact Sales</button>
+        <button class="text-indigo-500 text-sm ml-3 hover:text-slate-800">
+          Contact Sales
+        </button>
       </div>
       <!-- item 2 -->
       <div class="">
@@ -364,7 +370,7 @@
         <p class="text-sm text-gray-500 mb-2">
           Integrated per-transaction pricing with no hidden fees.
         </p>
-        <button class="text-indigo-500 font-bold text-sm">
+        <button class="text-indigo-500 font-bold text-sm hover:text-slate-800">
           Pricing details
         </button>
       </div>
@@ -376,15 +382,17 @@
           Get up and running with Stripe in as little as 10 minutes
         </p>
 
-        <button class="text-indigo-500 text-sm font-bold">API reference</button>
+        <button class="text-indigo-500 text-sm font-bold hover:text-slate-800">
+          API reference
+        </button>
       </div>
     </div>
 
     <!-- starting of footer   -->
 
-    <div class="h-fullester md:h-fuller -skew-y-6 bg-second">
+    <div class="h-auto md:h-auto -skew-y-6 bg-second">
       <div class="max-w-container mx-auto px-4 pt-40 skew-y-6">
-        <div class="md:flex gap-40">
+        <div class="md:flex">
           <!-- footer 1 -->
           <div class="flex flex-col justify-between mb-10 md:mb-0">
             <div>
@@ -401,28 +409,38 @@
             <div>
               <p class="text-sm text-gray-500 font-bold mb-3">Product</p>
               <ul class="text-sm text-gray-600 space-y-2">
-                <li>Atlas</li>
-                <li>Billing</li>
-                <li>Capital</li>
-                <li>Checkout</li>
-                <li>Climate</li>
-                <li>Connect</li>
-                <li>Corporate Card</li>
-                <li>Data Pipeline</li>
-                <li>Financial Connections</li>
-                <li>Invoicing</li>
-                <li>Issuing</li>
-                <li>Link</li>
-                <li>Payments</li>
-                <li>Payment Links</li>
-                <li>Payouts</li>
-                <li>Pricing</li>
-                <li>Radar</li>
-                <li>Revenue Recognition</li>
-                <li>Sigma</li>
-                <li>Tax</li>
-                <li>Terminal</li>
-                <li>Treasury</li>
+                <li class="cursor-pointer hover:text-gray-400">Atlas</li>
+                <li class="cursor-pointer hover:text-gray-400">Billing</li>
+                <li class="cursor-pointer hover:text-gray-400">Capital</li>
+                <li class="cursor-pointer hover:text-gray-400">Checkout</li>
+                <li class="cursor-pointer hover:text-gray-400">Climate</li>
+                <li class="cursor-pointer hover:text-gray-400">Connect</li>
+                <li class="cursor-pointer hover:text-gray-400">
+                  Corporate Card
+                </li>
+                <li class="cursor-pointer hover:text-gray-400">
+                  Data Pipeline
+                </li>
+                <li class="cursor-pointer hover:text-gray-400">
+                  Financial Connections
+                </li>
+                <li class="cursor-pointer hover:text-gray-400">Invoicing</li>
+                <li class="cursor-pointer hover:text-gray-400">Issuing</li>
+                <li class="cursor-pointer hover:text-gray-400">Link</li>
+                <li class="cursor-pointer hover:text-gray-400">Payments</li>
+                <li class="cursor-pointer hover:text-gray-400">
+                  Payment Links
+                </li>
+                <li class="cursor-pointer hover:text-gray-400">Payouts</li>
+                <li class="cursor-pointer hover:text-gray-400">Pricing</li>
+                <li class="cursor-pointer hover:text-gray-400">Radar</li>
+                <li class="cursor-pointer hover:text-gray-400">
+                  Revenue Recognition
+                </li>
+                <li class="cursor-pointer hover:text-gray-400">Sigma</li>
+                <li class="cursor-pointer hover:text-gray-400">Tax</li>
+                <li class="cursor-pointer hover:text-gray-400">Terminal</li>
+                <li class="cursor-pointer hover:text-gray-400">Treasury</li>
               </ul>
             </div>
 
@@ -430,32 +448,52 @@
             <div>
               <p class="text-sm text-gray-500 font-bold mb-3">Use Cases</p>
               <ul class="text-sm text-gray-600 space-y-2">
-                <li>Ecommerce</li>
-                <li>SaaS</li>
-                <li>Marketplaces</li>
-                <li>Embedded Finance</li>
-                <li>Platforms</li>
-                <li>Creator Economy</li>
-                <li>Crypto</li>
-                <li>Global Businesses</li>
+                <li class="cursor-pointer hover:text-gray-400">Ecommerce</li>
+                <li class="cursor-pointer hover:text-gray-400">SaaS</li>
+                <li class="cursor-pointer hover:text-gray-400">Marketplaces</li>
+                <li class="cursor-pointer hover:text-gray-400">
+                  Embedded Finance
+                </li>
+                <li class="cursor-pointer hover:text-gray-400">Platforms</li>
+                <li class="cursor-pointer hover:text-gray-400">
+                  Creator Economy
+                </li>
+                <li class="cursor-pointer hover:text-gray-400">Crypto</li>
+                <li class="cursor-pointer hover:text-gray-400">
+                  Global Businesses
+                </li>
               </ul>
 
               <p class="text-sm text-gray-500 font-bold my-3">
                 Integrations & Custom Solutions
               </p>
               <ul class="text-sm text-gray-600 space-y-2">
-                <li>App Marketplace</li>
-                <li>Partner Ecosystem</li>
-                <li>Professional Services</li>
+                <li class="cursor-pointer hover:text-gray-400">
+                  App Marketplace
+                </li>
+                <li class="cursor-pointer hover:text-gray-400">
+                  Partner Ecosystem
+                </li>
+                <li class="cursor-pointer hover:text-gray-400">
+                  Professional Services
+                </li>
               </ul>
 
               <p class="text-sm text-gray-500 font-bold my-3">Developers</p>
               <ul class="text-sm text-gray-600 space-y-2">
-                <li>Documentation</li>
-                <li>API Reference</li>
-                <li>API Status</li>
-                <li>API Changelog</li>
-                <li>Build a Strip App</li>
+                <li class="cursor-pointer hover:text-gray-400">
+                  Documentation
+                </li>
+                <li class="cursor-pointer hover:text-gray-400">
+                  API Reference
+                </li>
+                <li class="cursor-pointer hover:text-gray-400">API Status</li>
+                <li class="cursor-pointer hover:text-gray-400">
+                  API Changelog
+                </li>
+                <li class="cursor-pointer hover:text-gray-400">
+                  Build a Strip App
+                </li>
               </ul>
             </div>
 
@@ -463,23 +501,33 @@
             <div>
               <p class="text-sm text-gray-500 font-bold mb-3">Resources</p>
               <ul class="text-sm text-gray-600 space-y-2">
-                <li>Support Center</li>
-                <li>Guides</li>
-                <li>Blog</li>
-                <li>Annual Conference</li>
-                <li>Privacy & Terms</li>
-                <li>Licenses</li>
-                <li>COVID-19</li>
-                <li>Sitemap</li>
-                <li>Cookie settings</li>
+                <li class="cursor-pointer hover:text-gray-400">
+                  Support Center
+                </li>
+                <li class="cursor-pointer hover:text-gray-400">Guides</li>
+                <li class="cursor-pointer hover:text-gray-400">Blog</li>
+                <li class="cursor-pointer hover:text-gray-400">
+                  Annual Conference
+                </li>
+                <li class="cursor-pointer hover:text-gray-400">
+                  Privacy & Terms
+                </li>
+                <li class="cursor-pointer hover:text-gray-400">Licenses</li>
+                <li class="cursor-pointer hover:text-gray-400">COVID-19</li>
+                <li class="cursor-pointer hover:text-gray-400">Sitemap</li>
+                <li class="cursor-pointer hover:text-gray-400">
+                  Cookie settings
+                </li>
               </ul>
 
               <p class="text-sm text-gray-500 font-bold my-3">Company</p>
               <ul class="text-sm text-gray-600 space-y-2">
-                <li class="">Jobs</li>
-                <li>Newsroom</li>
-                <li>Stripe Press</li>
-                <li>Become a Partner</li>
+                <li class="cursor-pointer hover:text-gray-400">Jobs</li>
+                <li class="cursor-pointer hover:text-gray-400">Newsroom</li>
+                <li class="cursor-pointer hover:text-gray-400">Stripe Press</li>
+                <li class="cursor-pointer hover:text-gray-400">
+                  Become a Partner
+                </li>
               </ul>
             </div>
           </div>

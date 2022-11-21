@@ -3,6 +3,9 @@ module.exports = {
   content: ['./*.{html,js}'],
   theme: {
     extend: {
+      backgroundImage: {
+        background: 'url(/assets/world.png)',
+      },
       animation: {
         'gradient-xy': 'gradient-xy 15s ease infinite',
       },
