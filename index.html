@@ -10,7 +10,7 @@
   <body>
     <!-- Gratient of showcase  -->
     <div
-      class="h-medium md:h-full -skew-y-12 -translate-y-80 bg-gradient-to-r from-red-500 via-yellow-500 to-pink-500 transform opacity-80 animate-gradient-xy"
+      class="h-90 md:h-98 -skew-y-12 -translate-y-80 bg-gradient-to-r from-red-500 via-yellow-500 to-pink-500 transform opacity-80 animate-gradient-xy"
     ></div>
     <!-- starting of navbar-->
     <div class="absolute w-full top-0">
@@ -27,10 +27,15 @@
         </ul>
 
         <button
-          class="text-sm bg-white bg-opacity-20 px-6 py-1 rounded-full cursor-pointer hover:bg-opacity-50"
+          class="hidden md:block text-sm bg-white bg-opacity-20 px-6 py-1 rounded-full cursor-pointer hover:bg-opacity-50"
         >
           Sign in
         </button>
+        <div
+          class="md:hidden bg-white bg-opacity-20 px-4 py-3 rounded-full cursor-pointer hover:bg-opacity-50"
+        >
+          <img class="w-6" src="assets/menu.svg" alt="" />
+        </div>
       </div>
     </div>
 
@@ -39,7 +44,7 @@
       <div class="px-4 py-2 flex gap-5 justify-between overflow-hidden">
         <div class="pt-20 md:ml-24 md:pt-32">
           <h1
-            class="text-5xl md:text-7.7xl opacity-70 font-bold tracking-tight leading-tight"
+            class="text-5xl md:text-50 opacity-70 font-bold tracking-tight leading-tight"
           >
             Financial <br />
             infrastructure <br />
@@ -338,7 +343,7 @@
         </div>
       </div>
       <!-- remove the skew on one side -->
-      <div class="absolute w-full h-small bg-white -mt-32"></div>
+      <div class="absolute w-full h-30 bg-white -mt-32"></div>
     </section>
 
     <!-- starting of get ready   -->
@@ -349,7 +354,7 @@
       <!-- item 1 -->
       <div class="md:col-span-2">
         <h1 class="text-2xl font-bold mb-6">Ready to get started?</h1>
-        <p class="text-base text-gray-500 mb-5 w-small">
+        <p class="text-base text-gray-500 mb-5 w-23">
           Explore Stripe Payments, or create an account instantly and start
           accepting payments. You can also contact us to design a custom package
           for your business
@@ -391,150 +396,141 @@
     <!-- starting of footer   -->
 
     <div class="h-auto md:h-auto -skew-y-6 bg-second">
-      <div class="max-w-container mx-auto px-4 pt-40 skew-y-6">
-        <div class="md:flex">
-          <!-- footer 1 -->
-          <div class="flex flex-col justify-between mb-10 md:mb-0">
-            <div>
-              <p class="text-2xl font-bold mb-3">Stripe</p>
-              <ul class="text-sm space-y-1 text-gray-600">
-                <li>United States</li>
-                <li>English (United State)</li>
-              </ul>
-            </div>
-            <div class="text-sm text-gray-600">© 2022 Stripe, Inc.</div>
+      <div class="max-w-container mx-auto px-4 pt-40 skew-y-6 md:flex">
+        <!-- footer 1 -->
+        <div class="flex flex-col w-96 justify-between mb-10 md:mb-0">
+          <div>
+            <p class="text-2xl font-bold mb-3">Stripe</p>
+            <ul class="text-9 space-y-1 text-gray-600">
+              <li class="flex gap-1">
+                <img class="w-4" src="assets/location.svg" alt="" /> United
+                States
+              </li>
+
+              <li class="flex gap-1">
+                <img class="w-4" src="assets/dialogue.svg" alt="" /> English
+                (United State)
+              </li>
+            </ul>
           </div>
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-20">
-            <!-- footer 2 -->
-            <div>
-              <p class="text-sm text-gray-500 font-bold mb-3">Product</p>
-              <ul class="text-sm text-gray-600 space-y-2">
-                <li class="cursor-pointer hover:text-gray-400">Atlas</li>
-                <li class="cursor-pointer hover:text-gray-400">Billing</li>
-                <li class="cursor-pointer hover:text-gray-400">Capital</li>
-                <li class="cursor-pointer hover:text-gray-400">Checkout</li>
-                <li class="cursor-pointer hover:text-gray-400">Climate</li>
-                <li class="cursor-pointer hover:text-gray-400">Connect</li>
-                <li class="cursor-pointer hover:text-gray-400">
-                  Corporate Card
-                </li>
-                <li class="cursor-pointer hover:text-gray-400">
-                  Data Pipeline
-                </li>
-                <li class="cursor-pointer hover:text-gray-400">
-                  Financial Connections
-                </li>
-                <li class="cursor-pointer hover:text-gray-400">Invoicing</li>
-                <li class="cursor-pointer hover:text-gray-400">Issuing</li>
-                <li class="cursor-pointer hover:text-gray-400">Link</li>
-                <li class="cursor-pointer hover:text-gray-400">Payments</li>
-                <li class="cursor-pointer hover:text-gray-400">
-                  Payment Links
-                </li>
-                <li class="cursor-pointer hover:text-gray-400">Payouts</li>
-                <li class="cursor-pointer hover:text-gray-400">Pricing</li>
-                <li class="cursor-pointer hover:text-gray-400">Radar</li>
-                <li class="cursor-pointer hover:text-gray-400">
-                  Revenue Recognition
-                </li>
-                <li class="cursor-pointer hover:text-gray-400">Sigma</li>
-                <li class="cursor-pointer hover:text-gray-400">Tax</li>
-                <li class="cursor-pointer hover:text-gray-400">Terminal</li>
-                <li class="cursor-pointer hover:text-gray-400">Treasury</li>
-              </ul>
-            </div>
+          <div class="text-9 text-gray-600">© 2022 Stripe, Inc.</div>
+        </div>
+        <div class="flex-10 grid grid-cols-2 md:grid-cols-4 gap-20">
+          <!-- footer 2 -->
+          <div>
+            <p class="text-9 text-gray-500 font-bold mb-3">Product</p>
+            <ul class="text-9 text-gray-600 space-y-2">
+              <li class="cursor-pointer hover:text-gray-400">Atlas</li>
+              <li class="cursor-pointer hover:text-gray-400">Billing</li>
+              <li class="cursor-pointer hover:text-gray-400">Capital</li>
+              <li class="cursor-pointer hover:text-gray-400">Checkout</li>
+              <li class="cursor-pointer hover:text-gray-400">Climate</li>
+              <li class="cursor-pointer hover:text-gray-400">Connect</li>
+              <li class="cursor-pointer hover:text-gray-400">Corporate Card</li>
+              <li class="cursor-pointer hover:text-gray-400">Data Pipeline</li>
+              <li class="cursor-pointer hover:text-gray-400">
+                Financial Connections
+              </li>
+              <li class="cursor-pointer hover:text-gray-400">Invoicing</li>
+              <li class="cursor-pointer hover:text-gray-400">Issuing</li>
+              <li class="cursor-pointer hover:text-gray-400">Link</li>
+              <li class="cursor-pointer hover:text-gray-400">Payments</li>
+              <li class="cursor-pointer hover:text-gray-400">Payment Links</li>
+              <li class="cursor-pointer hover:text-gray-400">Payouts</li>
+              <li class="cursor-pointer hover:text-gray-400">Pricing</li>
+              <li class="cursor-pointer hover:text-gray-400">Radar</li>
+              <li class="cursor-pointer hover:text-gray-400">
+                Revenue Recognition
+              </li>
+              <li class="cursor-pointer hover:text-gray-400">Sigma</li>
+              <li class="cursor-pointer hover:text-gray-400">Tax</li>
+              <li class="cursor-pointer hover:text-gray-400">Terminal</li>
+              <li class="cursor-pointer hover:text-gray-400">Treasury</li>
+            </ul>
+          </div>
 
-            <!-- footer 3 -->
-            <div>
-              <p class="text-sm text-gray-500 font-bold mb-3">Use Cases</p>
-              <ul class="text-sm text-gray-600 space-y-2">
-                <li class="cursor-pointer hover:text-gray-400">Ecommerce</li>
-                <li class="cursor-pointer hover:text-gray-400">SaaS</li>
-                <li class="cursor-pointer hover:text-gray-400">Marketplaces</li>
-                <li class="cursor-pointer hover:text-gray-400">
-                  Embedded Finance
-                </li>
-                <li class="cursor-pointer hover:text-gray-400">Platforms</li>
-                <li class="cursor-pointer hover:text-gray-400">
-                  Creator Economy
-                </li>
-                <li class="cursor-pointer hover:text-gray-400">Crypto</li>
-                <li class="cursor-pointer hover:text-gray-400">
-                  Global Businesses
-                </li>
-              </ul>
+          <!-- footer 3 -->
+          <div>
+            <p class="text-9 text-gray-500 font-bold mb-3">Use Cases</p>
+            <ul class="text-9 text-gray-600 space-y-2">
+              <li class="cursor-pointer hover:text-gray-400">Ecommerce</li>
+              <li class="cursor-pointer hover:text-gray-400">SaaS</li>
+              <li class="cursor-pointer hover:text-gray-400">Marketplaces</li>
+              <li class="cursor-pointer hover:text-gray-400">
+                Embedded Finance
+              </li>
+              <li class="cursor-pointer hover:text-gray-400">Platforms</li>
+              <li class="cursor-pointer hover:text-gray-400">
+                Creator Economy
+              </li>
+              <li class="cursor-pointer hover:text-gray-400">Crypto</li>
+              <li class="cursor-pointer hover:text-gray-400">
+                Global Businesses
+              </li>
+            </ul>
 
-              <p class="text-sm text-gray-500 font-bold my-3">
-                Integrations & Custom Solutions
-              </p>
-              <ul class="text-sm text-gray-600 space-y-2">
-                <li class="cursor-pointer hover:text-gray-400">
-                  App Marketplace
-                </li>
-                <li class="cursor-pointer hover:text-gray-400">
-                  Partner Ecosystem
-                </li>
-                <li class="cursor-pointer hover:text-gray-400">
-                  Professional Services
-                </li>
-              </ul>
+            <p class="text-9 text-gray-500 font-bold my-3">
+              Integrations & Custom Solutions
+            </p>
+            <ul class="text-9 text-gray-600 space-y-2">
+              <li class="cursor-pointer hover:text-gray-400">
+                App Marketplace
+              </li>
+              <li class="cursor-pointer hover:text-gray-400">
+                Partner Ecosystem
+              </li>
+              <li class="cursor-pointer hover:text-gray-400">
+                Professional Services
+              </li>
+            </ul>
 
-              <p class="text-sm text-gray-500 font-bold my-3">Developers</p>
-              <ul class="text-sm text-gray-600 space-y-2">
-                <li class="cursor-pointer hover:text-gray-400">
-                  Documentation
-                </li>
-                <li class="cursor-pointer hover:text-gray-400">
-                  API Reference
-                </li>
-                <li class="cursor-pointer hover:text-gray-400">API Status</li>
-                <li class="cursor-pointer hover:text-gray-400">
-                  API Changelog
-                </li>
-                <li class="cursor-pointer hover:text-gray-400">
-                  Build a Strip App
-                </li>
-              </ul>
-            </div>
+            <p class="text-9 text-gray-500 font-bold my-3">Developers</p>
+            <ul class="text-9 text-gray-600 space-y-2">
+              <li class="cursor-pointer hover:text-gray-400">Documentation</li>
+              <li class="cursor-pointer hover:text-gray-400">API Reference</li>
+              <li class="cursor-pointer hover:text-gray-400">API Status</li>
+              <li class="cursor-pointer hover:text-gray-400">API Changelog</li>
+              <li class="cursor-pointer hover:text-gray-400">
+                Build a Strip App
+              </li>
+            </ul>
+          </div>
 
-            <!-- footer 4 -->
-            <div>
-              <p class="text-sm text-gray-500 font-bold mb-3">Resources</p>
-              <ul class="text-sm text-gray-600 space-y-2">
-                <li class="cursor-pointer hover:text-gray-400">
-                  Support Center
-                </li>
-                <li class="cursor-pointer hover:text-gray-400">Guides</li>
-                <li class="cursor-pointer hover:text-gray-400">Blog</li>
-                <li class="cursor-pointer hover:text-gray-400">
-                  Annual Conference
-                </li>
-                <li class="cursor-pointer hover:text-gray-400">
-                  Privacy & Terms
-                </li>
-                <li class="cursor-pointer hover:text-gray-400">Licenses</li>
-                <li class="cursor-pointer hover:text-gray-400">COVID-19</li>
-                <li class="cursor-pointer hover:text-gray-400">Sitemap</li>
-                <li class="cursor-pointer hover:text-gray-400">
-                  Cookie settings
-                </li>
-              </ul>
+          <!-- footer 4 -->
+          <div>
+            <p class="text-9 text-gray-500 font-bold mb-3">Resources</p>
+            <ul class="text-9 text-gray-600 space-y-2">
+              <li class="cursor-pointer hover:text-gray-400">Support Center</li>
+              <li class="cursor-pointer hover:text-gray-400">Guides</li>
+              <li class="cursor-pointer hover:text-gray-400">Blog</li>
+              <li class="cursor-pointer hover:text-gray-400">
+                Annual Conference
+              </li>
+              <li class="cursor-pointer hover:text-gray-400">
+                Privacy & Terms
+              </li>
+              <li class="cursor-pointer hover:text-gray-400">Licenses</li>
+              <li class="cursor-pointer hover:text-gray-400">COVID-19</li>
+              <li class="cursor-pointer hover:text-gray-400">Sitemap</li>
+              <li class="cursor-pointer hover:text-gray-400">
+                Cookie settings
+              </li>
+            </ul>
 
-              <p class="text-sm text-gray-500 font-bold my-3">Company</p>
-              <ul class="text-sm text-gray-600 space-y-2">
-                <li class="cursor-pointer hover:text-gray-400">Jobs</li>
-                <li class="cursor-pointer hover:text-gray-400">Newsroom</li>
-                <li class="cursor-pointer hover:text-gray-400">Stripe Press</li>
-                <li class="cursor-pointer hover:text-gray-400">
-                  Become a Partner
-                </li>
-              </ul>
-            </div>
+            <p class="text-9 text-gray-500 font-bold my-3">Company</p>
+            <ul class="text-9 text-gray-600 space-y-2">
+              <li class="cursor-pointer hover:text-gray-400">Jobs</li>
+              <li class="cursor-pointer hover:text-gray-400">Newsroom</li>
+              <li class="cursor-pointer hover:text-gray-400">Stripe Press</li>
+              <li class="cursor-pointer hover:text-gray-400">
+                Become a Partner
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
     <!-- remove the skew on one side of footer -->
-    <div class="h-sm bg-second -mt-16"></div>
+    <div class="h-20 bg-second -mt-16"></div>
   </body>
 </html>
