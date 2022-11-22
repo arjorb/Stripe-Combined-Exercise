@@ -1024,6 +1024,14 @@ video {
   background-size: cover;
 }
 
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
